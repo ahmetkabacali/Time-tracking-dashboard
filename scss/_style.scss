@@ -8,6 +8,10 @@ body {
 .card-header,
 .card-footer {border: none !important;}
 
+.container-fluid{
+    max-width: 80%!important;
+}
+
 
 .person {
     &__card {
@@ -77,24 +81,40 @@ body {
     }
 }
 // media
-@media(max-width: 1200px) {
+@media(max-width: 1400px) {
+    .container-fluid{
+        max-width: 85%!important;
+    }
     .person{
         h3.card-title{
-            font-size: calc(1.8rem + .6vw)!important;
+            font-size: calc(1.7rem + .6vw)!important;
+        }
+    }
+}
+@media(max-width: 1200px) {
+    .container-fluid{
+        max-width: 90%!important;
+    }
+    .person{
+        h3.card-title{
+            font-size: calc(1.6rem + .6vw)!important;
         }
     }
 }
 @media(max-width: 992px) {
+    .container-fluid{
+        max-width: 100%!important;
+    }
     .person{
         h3.card-title{
-            font-size: calc(1.3rem + .6vw)!important;
+            font-size: calc(1.2rem + .6vw)!important;
         }
     }
 }
 @media(max-width: 576px) {
     .person {
         h3.card-title {
-            font-size: calc(0.1.2rem + .6vw) !important;
+            font-size: calc(1.1rem + .6vw) !important;
         }
     }
 }
