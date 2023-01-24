@@ -2,16 +2,14 @@ body {
     background-color: $Very_dark_blue;
     font-family: 'Rubik', sans-serif;
     color: white;
+    .container-fluid{
+        max-width: 85%!important;
+    }
 }
 
 .card,
 .card-header,
 .card-footer {border: none !important;}
-
-.container-fluid{
-    max-width: 80%!important;
-}
-
 
 .person {
     &__card {
@@ -23,7 +21,9 @@ body {
         }
 
         &__footer{
-            small {
+            button {
+                border: none;
+                background-color: inherit;
                 &.active {
                     color: white!important;
                 }
@@ -82,12 +82,9 @@ body {
 }
 // media
 @media(max-width: 1400px) {
-    .container-fluid{
-        max-width: 85%!important;
-    }
     .person{
-        h3.card-title{
-            font-size: calc(1.7rem + .6vw)!important;
+        .card-title{
+            font-size: calc(1.6rem + .6vw)!important;
         }
     }
 }
@@ -96,8 +93,8 @@ body {
         max-width: 90%!important;
     }
     .person{
-        h3.card-title{
-            font-size: calc(1.6rem + .6vw)!important;
+        .card-title{
+            font-size: calc(1.4rem + .6vw)!important;
         }
     }
 }
@@ -106,17 +103,28 @@ body {
         max-width: 100%!important;
     }
     .person{
-        h3.card-title{
+        .card-title{
             font-size: calc(1.2rem + .6vw)!important;
         }
     }
 }
 @media(max-width: 576px) {
     .person {
-        h3.card-title {
+        .card-title {
             font-size: calc(1.1rem + .6vw) !important;
         }
     }
 }
 
-
+// sr
+.sr-only {
+    position: absolute;
+    width: 0.063rem;
+    height: 0.063rem;
+    padding: 0;
+    margin: -0.063rem;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
