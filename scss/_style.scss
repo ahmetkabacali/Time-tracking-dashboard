@@ -1,0 +1,102 @@
+body {
+    background-color: $Very_dark_blue;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+.card,
+.card-header,
+.card-footer {border: none !important;}
+
+
+.person {
+    &__card {
+        border-radius: 1.5rem 1.5rem 1rem 1rem; //1.5rem for clear corner
+        background-color: $Dark_blue;
+
+        &__body {
+            border-radius: 1rem;
+        }
+
+        &__footer{
+            small {
+                &.active {
+                    color: white!important;
+                }
+                &:hover {
+                    color: $Soft_orange!important;
+                }
+            }
+        }
+    }
+}
+.stat {
+    .stat__work__card {background-color: $Light_red;}
+    .stat__play__card {background-color: $Soft_blue;}
+    .stat__study__card {background-color: $Light_pink;}
+    .stat__exercise__card {background-color: $Lime_green;}
+    .stat__social__card {background-color: $Violet;}
+    .stat__self__card {background-color: $Soft_orange;}
+    &__col {
+
+        .stat__card {
+            position: relative;
+            height: 100%;
+            border-radius: 1rem 1rem 1.5rem 1.5rem; //1.5rem for clear corner
+            border: none;
+
+            &__header {
+                border-radius: 1rem 1rem 0 0;
+                position: relative;
+                height: 2.5rem;
+                overflow: hidden;
+
+                &__img {
+                    position: absolute;
+                    width: 4.3rem;
+                    top: -5px;
+                    right: 20px;
+                }
+            }
+
+            &__body {
+                background-color: $Dark_blue;
+                overflow: hidden;
+                border-radius: 1rem;
+                &:hover, &:hover *{
+                    background-color: $Desaturated_blue;
+                    cursor: pointer;
+                    color: white!important;
+                }
+                &__text{
+                    font-weight: lighter;
+                    font-size: calc(2rem + .9vw)!important;
+                }
+            }
+        }
+    }
+}
+// media
+@media(max-width: 1200px) {
+    .person{
+        h3.card-title{
+            font-size: calc(1.8rem + .6vw)!important;
+        }
+    }
+}
+@media(max-width: 992px) {
+    .person{
+        h3.card-title{
+            font-size: calc(1.3rem + .6vw)!important;
+        }
+    }
+}
+@media(max-width: 576px) {
+    .person {
+        h3.card-title {
+            font-size: calc(0.1.2rem + .6vw) !important;
+        }
+    }
+}
+
+

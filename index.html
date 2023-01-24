@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./public/css/bootstrap-custom.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+
+<body class="min-vh-100 d-flex flex-column justify-content-center align-items-center">
+
+  <main class="container-fluid p-3 pb-lg-1 p-lg-5">
+    <div class="row p-lg-5 pb-lg-0">
+      <div class="person mb-4 mb-lg-0 col-md-12 col-lg-3">
+        <div class="card person__card h-100">
+          <div
+            class="card_body p-4 d-flex justify-content-center align-items-center d-lg-block person__card__body bg-primary">
+            <figure class="figure col-3 col-lg-6 mb-0 mb-lg-3">
+              <img class="figure-img img-fluid rounded-circle w-100 border border-4 border-white" src="./public/images/image-jeremy.png" alt="Jeremmy">
+            </figure>
+            <div class="col-9 col-lg-12 ps-3 ps-md-5 ps-lg-0">
+              <small class="text-muted d-block ">Report For</small>
+              <h3 class="card-title mb-lg-5 fs-1 fw-light">Jeremy Robson</h3>
+            </div>
+          </div>
+          <div id="timeframes" class="card-footer p-lg-4 d-flex justify-content-around d-lg-block person__card__footer ">
+            <small type="submit" class="time-period text-muted d-block mt-3">Daily</small>
+            <small type="submit" class="time-period text-muted d-block mt-3 active">Weekly</small>
+            <small type="submit" class="time-period text-muted d-block mt-3">Monthly</small>
+          </div>
+        </div>
+      </div>
+<!-- ******************************************************************************** -->
+      <div class="stat  col-md-12 col-lg-9">
+        <div class="row stat__top row-cols-1 row-cols-md-3 g-4 mb-2">
+          <div class="col stat__col work">
+            <div class="card stat__card stat__work__card">
+              <div class="card-header stat__card__header">
+                <img src="./public/images/icon-work.svg" class="stat__card__header__img" alt="" aria-label="hidden">
+              </div>
+              <div class="card-body stat__card__body p-4 d-flex flex-column justify-content-around">
+                <h6 class="card-title align-bottom">Work<img class="float-end p-2" src="./public/images/icon-ellipsis.svg" alt="" aria-label="hidden"></h6>
+                <p class="card-text stat__card__body__text my-3 fs-2"><span class="card-hour">32</span>hrs</p>
+                <small class="text-muted">Last Week - <span class="previos-hour">36</span>hrs</small>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col stat__col play">
+            <div class="card stat__card stat__play__card">
+              <div class="card-header stat__card__header">
+                <img src="./public/images/icon-play.svg" class="stat__card__header__img" alt="" aria-label="hidden">
+              </div>
+              <div class="card-body stat__card__body p-4 d-flex flex-column justify-content-around">
+                <h6 class="card-title align-bottom">Play<img class="float-end p-2" src="./public/images/icon-ellipsis.svg" alt="" aria-label="hidden"></h6>
+                <p class="card-text stat__card__body__text my-3 fs-2"><span class="card-hour">10</span>hrs</p>
+                <small class="text-muted">Last Week - <span>8</span>hrs</small>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col stat__col study">
+            <div class="card stat__card stat__study__card">
+              <div class="card-header stat__card__header">
+                <img src="./public/images/icon-study.svg" class="stat__card__header__img" alt="" aria-label="hidden">
+              </div>
+              <div class="card-body stat__card__body p-4 d-flex flex-column justify-content-around">
+                <h6 class="card-title align-bottom">Study<img class="float-end p-2" src="./public/images/icon-ellipsis.svg" alt="" aria-label="hidden"></h6>
+                <p class="card-text stat__card__body__text my-3 fs-2"><span class="card-hour">4</span>hrs</p>
+                <small class="text-muted">Last Week - <span>7</span>hrs</small>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+<!-- ******************************************************************************** -->
+        <div class="row stat__bottom row-cols-1 row-cols-md-3 g-4 mt-2">
+          <!--  -->
+          <div class="col stat__col">
+            <div class="card stat__card stat__exercise__card">
+              <div class="card-header stat__card__header">
+                <img src="./public/images/icon-exercise.svg" class="stat__card__header__img" alt="" aria-label="hidden">
+              </div>
+              <div class="card-body stat__card__body p-4 d-flex flex-column justify-content-around">
+                <h6 class="card-title align-bottom">Exercise<img class="float-end p-2" src="./public/images/icon-ellipsis.svg" alt="" aria-label="hidden"></h6>
+                <p class="card-text stat__card__body__text my-3 fs-2"><span class="card-hour">4</span>hrs</p>
+                <small class="text-muted">Last Week - <span>5</span>hrs</small>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col stat__col ">
+            <div class="card stat__card stat__social__card">
+              <div class="card-header stat__card__header">
+                <img src="./public/images/icon-social.svg" class="stat__card__header__img" alt="" aria-label="hidden">
+              </div>
+              <div class="card-body stat__card__body p-4 d-flex flex-column justify-content-around">
+                <h6 class="card-title align-bottom">Social<img class="float-end p-2" src="./public/images/icon-ellipsis.svg" alt="" aria-label="hidden"></h6>
+                <p class="card-text stat__card__body__text my-3 fs-2"><span class="card-hour">5</span>hrs</p>
+                <small class="text-muted">Last Week - <span>10</span>hrs</small>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col stat__col ">
+            <div class="card stat__card stat__self__card">
+              <div class="card-header stat__card__header">
+                <img src="./public/images/icon-self-care.svg" class="stat__card__header__img" alt=""aria-label="hidden">
+              </div>
+              <div class="card-body stat__card__body p-4 d-flex flex-column justify-content-around">
+                <h6 class="card-title align-bottom">Work<img class="float-end p-2" src="./public/images/icon-ellipsis.svg" alt="" aria-label="hidden"></h6>
+                <p class="card-text stat__card__body__text my-3 fs-2"><span class="card-hour">2</span>hrs</p>
+                <small class="text-muted">Last Week - <span>2</span>hrs</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="attribution text-center px-4">
+    Challenge by <a class="text-danger" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a class="text-danger fs-6" href="#">Ahmet Kabacali</a>.
+  </footer>
+</body>
+<!-- ******************************************************************************** -->
+<script src="./public/js/bootstrap.min.js"></script>
+<script src="./public/js/script.js"></script>
+
+
+</html>
